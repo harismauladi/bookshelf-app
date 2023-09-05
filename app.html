@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookshelf</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf</h1>
+      <nav>
+        <ul>
+          <li><a href="#add" class="link">Add</a></li>
+          <li><a href="#search" class="link">Search</a></li>
+          <li><a href="#done" class="link">Done</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <div class="container">
+        <h2 class="head-container center" id="add">Tambah buku</h2>
+        <form action="#" id="form">
+          <div class="form-contain form-component">
+            <label for="title">Masukkan judul buku</label><br />
+            <input type="text" name="title" id="title" required />
+          </div>
+          <div class="form-contain form-component">
+            <label for="name">Masukkan nama penulis</label><br />
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-contain form-component">
+            <label for="year">Masukkan tahun terbit</label><br />
+            <input type="text" name="year" id="year" required />
+          </div>
+          <label for="isCompleted">Sudah Selesai Membaca</label>
+          <input type="checkbox" name="isCompleted" id="isCompleted" />
+          <input
+            type="submit"
+            value="Submit"
+            name="Submit"
+            class="btn-submit"
+          />
+        </form>
+      </div>
+      <div class="container">
+        <h2 id="search">Search Book</h2>
+        <form id="formSearchBook">
+          <label for="searchType" class="search-head">Judul</label>
+          <input id="searchType" name="searchType" type="text" />
+          <button id="searchSubmit" type="submit" class="submitBtn">
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="container">
+        <h2 class="head-container" id="on-going">On Going Reading Book</h2>
+        <div class="list-item" id="bookList"></div>
+      </div>
+      <div class="container">
+        <h2 class="head-container" id="done">Done</h2>
+        <div class="list-item" id="doneList"></div>
+      </div>
+      <div class="footer-contain">
+        <p class="footer-text">
+          Copyright &copy; All Right Reserved, Haris 2022
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
